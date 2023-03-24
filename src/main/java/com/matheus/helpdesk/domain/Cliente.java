@@ -1,5 +1,7 @@
 package com.matheus.helpdesk.domain;
 
+import com.matheus.helpdesk.domain.enums.Perfil;
+
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import java.io.Serial;
@@ -12,17 +14,17 @@ public class Cliente extends Pessoa {
     @Serial
     private static final long serialVersionUID = 1L;
 
-
-
     @OneToMany(mappedBy = "cliente")
     private List<Chamado> chamados = new ArrayList<>();
 
     public Cliente() {
         super();
+        addPerfil(Perfil.CLIENTE);
     }
 
     public Cliente(Integer id, String nome, String email, String cpf, String senha) {
         super(id, nome, email, cpf, senha);
+        addPerfil(Perfil.CLIENTE);
     }
 
     public List<Chamado> getChamados() {

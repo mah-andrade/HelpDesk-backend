@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.matheus.helpdesk.domain.enums.Prioridade;
 import com.matheus.helpdesk.domain.enums.Status;
 
-
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;

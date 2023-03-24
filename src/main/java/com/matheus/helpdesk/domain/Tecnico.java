@@ -1,10 +1,13 @@
 package com.matheus.helpdesk.domain;
 
+import com.matheus.helpdesk.domain.enums.Perfil;
+
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import java.io.Serial;
 import java.util.ArrayList;
 import java.util.List;
+
 @Entity
 public class Tecnico extends Pessoa {
 
@@ -15,10 +18,13 @@ public class Tecnico extends Pessoa {
     private List<Chamado> chamados = new ArrayList<>();
 
     public Tecnico() {
+        super();
+        addPerfil(Perfil.CLIENTE);
     }
 
     public Tecnico(Integer id, String nome, String email, String cpf, String senha) {
         super(id, nome, email, cpf, senha);
+        addPerfil(Perfil.CLIENTE);
     }
 
     public List<Chamado> getChamados() {

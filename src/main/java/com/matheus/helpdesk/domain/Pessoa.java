@@ -2,6 +2,7 @@ package com.matheus.helpdesk.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.matheus.helpdesk.domain.enums.Perfil;
+
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
