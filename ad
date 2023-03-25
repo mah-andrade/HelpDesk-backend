@@ -1,0 +1,41 @@
+[33mcommit de097ff5f0200f666a0d4168039b362272fda350[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: mah-andrade <mahandradesantos.01@gmail.com>
+Date:   Fri Mar 24 21:47:22 2023 -0300
+
+    Exceção para objeto nao encontrado
+
+[33mcommit 4f81075725dd051804aab02d73ada65091e494a1[m
+Author: mah-andrade <mahandradesantos.01@gmail.com>
+Date:   Fri Mar 24 21:11:20 2023 -0300
+
+    padrao DTO para tecnico
+
+[33mcommit 8c212a51078efe84ab60b9ff55704f20d8a2028c[m
+Author: mah-andrade <mahandradesantos.01@gmail.com>
+Date:   Fri Mar 24 20:49:53 2023 -0300
+
+    tirando a aplicação da serializacao
+
+[33mcommit a2df4b248693a13fdcb396fe3181f89dee6c96b9[m
+Author: mah-andrade <mahandradesantos.01@gmail.com>
+Date:   Fri Mar 24 19:30:52 2023 -0300
+
+    tecnicoResouce
+
+[33mcommit 7be6195426b80abb1e2f8deb0420f2f694fc6d5d[m
+Author: mah-andrade <mahandradesantos.01@gmail.com>
+Date:   Fri Mar 24 18:54:04 2023 -0300
+
+    perfil de desenvolvimento
+
+[33mcommit 406f9cb71d18dfda9c1449fbc06b3e61344cdcf1[m
+Author: mah-andrade <mahandradesantos.01@gmail.com>
+Date:   Fri Mar 24 18:12:20 2023 -0300
+
+    adicionado os repositories
+
+[33mcommit facea23a9650549c4bcda52ebe590750794135f7[m
+Author: mah-andrade <mahandradesantos.01@gmail.com>
+Date:   Fri Mar 24 18:11:57 2023 -0300
+
+    Repositories
