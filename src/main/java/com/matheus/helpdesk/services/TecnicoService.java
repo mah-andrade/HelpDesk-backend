@@ -21,6 +21,7 @@ public class TecnicoService {
 
     @Autowired
     PessoaRepository pessoaRepository;
+
     public Tecnico findById(Integer id){
         Optional<Tecnico> obj = tecnicoRepository.findById(id);
         return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado! Id: "+ id));
@@ -47,5 +48,13 @@ public class TecnicoService {
             throw new DataIntegrityViolationException("Email já cadastrado no sistema!");
         }
 
+    }
+
+    public Tecnico update(Integer id, TecnicoDTO objDto) {
+        objDto.setId(id);
+        Tecnico oldObj = findById(id);
+        validaPorCpfEmail(objDto);
+        oldObj = new Tecnico(objDto);
+        return tecnicoRepository.save(oldObj);
     }
 }
