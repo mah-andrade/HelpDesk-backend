@@ -1,7 +1,7 @@
 package com.matheus.helpdesk.dtos;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.matheus.helpdesk.domain.Tecnico;
+import com.matheus.helpdesk.domain.Cliente;
 import com.matheus.helpdesk.domain.enums.Perfil;
 
 import javax.validation.constraints.NotNull;
@@ -12,7 +12,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class TecnicoDTO implements Serializable {
+public class ClienteDTO implements Serializable {
 
     @Serial
     private static final long serialVersionUID = 1L;
@@ -32,11 +32,11 @@ public class TecnicoDTO implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
 
-    public TecnicoDTO() {
+    public ClienteDTO() {
         addPerfis(Perfil.CLIENTE);
     }
 
-    public TecnicoDTO(Tecnico obj) {
+    public ClienteDTO(Cliente obj) {
         this.id = obj.getId();
         this.nome = obj.getNome();
         this.cpf = obj.getCpf();
